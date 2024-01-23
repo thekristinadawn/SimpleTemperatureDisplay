@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Temperature Display</title>
+    <style>
+      h1,
+      h2 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 40px;
+        text-align: center;
+      }
+      h1 {
+        color: #1a64d6;
+        font-weight: bold;
+
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        font-weight: normal;
+      }
+      h2 .bold {
+        font-weight: bold;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        margin: 0 auto;
+        padding: 0;
+
+        list-style-type: none;
+
+        text-decoration: none;
+      }
+      ul li {
+        padding: 25px;
+      }
+      ul :hover {
+        background-color: #fffbef;
+      }
+      .partly-sunny,
+      .list-item {
+        text-align: center;
+      }
+      .partly-sunny {
+        font-size: 40px;
+      }
+      .list-weather {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+      }
+      .list-item,
+      .day {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      .list-item {
+        line-height: 1.5;
+      }
+      .list-item:last-child {
+        margin-bottom: 20px;
+      }
+      .day {
+        font-weight: bold;
+        font-size: 24px;
+        display: block;
+      }
+      .low-temp,
+      .high-temp {
+        color: #4c4b47;
+        font-size: 20px;
+        font-family: "Source Code Pro", monospace;
+      }
+
+      .high-temp {
+        font-weight: bold;
+      }
+      .change-city {
+        background-color: #1a64d6;
+        color: #ffffff;
+        display: block;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 20px 25px;
+        border: 2px solid #1a64d6;
+        border-radius: 35px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      .change-city:hover {
+        color: #1a64d6;
+        background-color: #ffffff;
+      }
+      .change-city + ul {
+        margin-top: 20px;
+      }
+
+      .footer {
+        color: #4c4c4c;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="partly-sunny">🌤️</div>
+    <h1>Currently 21° in Tokyo</h1>
+    <h2>13° /<span class="bold"> 23°</span></h2>
+
+    <ul class="list-weather">
+      <li class="list-item">
+        <span class="day">🌧️Tomorrow </span><br />
+        <span class="low-temp">10° / </span>
+        <span class="high-temp"> 22°</span>
+      </li>
+      <li class="list-item">
+        <span class="day">🌥️Saturday </span><br />
+        <span class="low-temp">15° / </span>
+        <span class="high-temp"> 17°</span>
+      </li>
+      <li class="list-item">
+        <span class="day">☀️Sunday </span><br />
+        <span class="low-temp">25° / </span>
+        <span class="high-temp"> 28° </span>
+      </li>
+    </ul>
+    <button class="change-city">Change city</button>
+    <div class="footer">Coded by Kristina Palmer</div>
+  </body>
+</html>
