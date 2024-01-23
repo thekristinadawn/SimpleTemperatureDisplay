@@ -1,0 +1,2 @@
+# SimpleTemperatureDisplay
+.html project
